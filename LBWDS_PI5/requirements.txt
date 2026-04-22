@@ -1,0 +1,31 @@
+# LBWDS Raspberry Pi 5 dependencies
+# Install on the Pi with: pip install -r requirements.txt
+# Some packages (picamera2, lgpio, RPi.GPIO) are typically installed via apt on Raspberry Pi OS.
+
+# Computer vision / ML
+ultralytics>=8.0.0
+opencv-python
+face_recognition
+numpy
+
+# Data handling
+pandas
+openpyxl
+
+# Audio
+sounddevice
+
+# Networking / IoT
+requests
+paho-mqtt
+python-dotenv
+
+# Sensors / GPIO / SPI (Raspberry Pi)
+# NOTE: On Raspberry Pi OS, prefer the apt packages:
+#   sudo apt install python3-lgpio python3-rpi.gpio python3-smbus python3-spidev python3-picamera2
+lgpio
+RPi.GPIO
+smbus2
+spidev
+gpiozero
+Adafruit_DHT
